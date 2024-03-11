@@ -20,7 +20,7 @@ internal class Animal
     {
         this._name = name;
         this._age = age;
-        this._sound ="No sound";
+        this._sound = "No sound";
     }
 
 
@@ -45,12 +45,12 @@ internal class Animal
     }
 
     // Behaviour methods
-    public void growsOlder()
+    public void GrowsOlder()
     {
         _age++;
     }
 
-    public void makeSound()
+    public void MakeSound()
     {
         Console.WriteLine($"{ _name} makes a { _sound} sound!");
     }

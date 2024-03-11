@@ -66,4 +66,11 @@ class Dog : Animal
 
     """);
     }
+
+    // Example of overriding the MakeSound from Animal
+    // and forcing all dogs to use this method instead.
+    public new void MakeSound()
+    {
+        Console.WriteLine($"{Name} barks! (using Dog.MakeSound instead of Animal.MakeSound)");
+    }
 }
