@@ -1,6 +1,10 @@
 ﻿namespace ThingsToDoWithOOP;
 
-internal class Animal
+
+// Now that the class is abstract, we are unable
+// to instantiate it as an object.
+
+internal abstract class Animal
 {
     // Attributes
     private string _name;
@@ -16,12 +20,12 @@ internal class Animal
     }
 
     // Public constructor to instantiate an animal object without sound [OVERLOADING]
-    public Animal(string name, int age)
-    {
-        this._name = name;
-        this._age = age;
-        this._sound = "No sound";
-    }
+    //public Animal(string name, int age)
+    //{
+    //    this._name = name;
+    //    this._age = age;
+    //    this._sound = "No sound";
+    //}
 
 
     // Getter and Setter for Name
@@ -54,4 +58,9 @@ internal class Animal
     {
         Console.WriteLine($"{ _name} makes a { _sound} sound!");
     }
+
+    // Example of creating an abstract method that MUST be implemented in
+    // all derived classes
+    public abstract void Sleep();
+
 }

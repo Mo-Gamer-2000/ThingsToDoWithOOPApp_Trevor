@@ -73,4 +73,9 @@ class Dog : Animal
     {
         Console.WriteLine($"{Name} barks! (using Dog.MakeSound instead of Animal.MakeSound)");
     }
+
+    public override void Sleep()
+    {
+        Console.WriteLine("Zzzzz!");
+    }
 }
